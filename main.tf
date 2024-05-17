@@ -1,13 +1,11 @@
-module "s3" {
-  source = "./modules/s3"
-
-  s3_bucket_name = "delanhese-devops-iac"
-
-  s3_tags = {
-    Iac         = true
-    Environment = terraform.workspace
-  }
-}
+# module "s3" {
+#   source         = "./modules/s3"
+#   s3_bucket_name = "delanhese-devops-iac"
+#   s3_tags = {
+#     Iac         = true
+#     Environment = terraform.workspace
+#   }
+# }
 
 # INFO -> This code is commented out because I don't have a validated AWS account.
 # module "cloudfront" {
